@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleta de Sorteio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sorteio sot</h1>
+            <p>Sortear pessoas em grupos de 2</p>
+        </header>
+
+        <div class="input-section">
+            <h2>Adicionar Participantes</h2>
+            <div class="input-group">
+                <input type="text" id="participantInput" placeholder="Digite o nome do participante">
+                <button id="addParticipant">Adicionar</button>
+            </div>
+            <div class="participants-list" id="participantsList">
+                <p class="empty-message">Nenhum participante adicionado ainda</p>
+            </div>
+        </div>
+
+        <div class="roulette-section">
+            <div class="roulette-container">
+                <div class="roulette-wheel" id="rouletteWheel">
+                    <div class="wheel-center">
+                    </div>
+                </div>
+                <div class="pointer pointer-1" id="pointer1"></div>
+                <div class="pointer pointer-2" id="pointer2"></div>
+            </div>
+            
+            <div class="controls">
+                <button id="spinButton" class="spin-btn" disabled>
+                    <span class="btn-text">Girar Roleta</span>
+                    <span class="btn-icon"></span>
+                </button>
+                <button id="resetButton" class="reset-btn" disabled>
+                    <span class="btn-text">Reiniciar</span>
+                    <span class="btn-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <h2>Resultados do Sorteio</h2>
+            <div class="selected-participants" id="selectedParticipants">
+                <p class="empty-message">Nenhum sorteio realizado ainda</p>
+            </div>
+            <div class="remaining-participants">
+                <h3>Participantes Restantes</h3>
+                <div class="remaining-list" id="remainingParticipants">
+                    <p class="empty-message">Todos os participantes disponíveis</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
